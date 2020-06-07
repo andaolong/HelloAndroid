@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TestViewActivity">
+
+
+    <Button
+        android:id="@+id/textTop01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="注册"
+        android:textSize="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/editTextTop01"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="用户名"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textTop01"></EditText>
+
+
+    <EditText
+        android:id="@+id/editTextTop02"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="密码"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextTop01"></EditText>
+
+    <RadioGroup
+        android:id="@+id/radioGroupTop01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextTop02">
+
+        <RadioButton
+            android:id="@+id/radioBtn01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="男"
+            android:textSize="20dp"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/radioBtn02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="女"
+            android:textSize="20dp"></RadioButton>
+
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/checkboxTop01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:text="记录密码"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radioGroupTop01" />
+
+    <CheckBox
+        android:id="@+id/checkboxTop02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="自动登录"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toRightOf="@id/checkboxTop01"
+        app:layout_constraintTop_toBottomOf="@id/radioGroupTop01" />
+
+    <Spinner
+        android:id="@+id/spinnerTop01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/checkboxTop02"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="150dp"
+        android:entries="@array/mySpinnerTop01Array"
+        ></Spinner>
+
+
+
+    <ListView
+        android:id="@+id/listView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:paddingLeft="130dp"
+        android:paddingRight="130dp"
+        android:layout_marginBottom="20dp"
+        android:entries="@array/myListView01Array"
+        ></ListView>
+
+
+    <ListView
+        android:id="@+id/listView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/spinnerTop01"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:paddingLeft="130dp"
+        android:paddingRight="130dp"
+        android:layout_marginTop="20dp"
+        android:entries="@array/myListView01Array"
+        ></ListView>
+
+
+    <ListView
+        android:id="@+id/listView03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/listView02"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:paddingLeft="130dp"
+        android:paddingRight="130dp"
+        android:layout_marginTop="20dp"
+        android:entries="@array/myListView01Array"
+        ></ListView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

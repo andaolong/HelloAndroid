@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".testServiceActivity">
+
+    <TextView
+        android:id="@+id/showContentTV"
+        android:layout_width="180dp"
+        android:layout_height="113dp"
+        android:text="Service"
+        android:textColor="#555555"
+        android:textSize="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <Button
+        android:id="@+id/serviceBtn1"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginVertical="30dp"
+        android:text="start"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/serviceBtn2"
+        app:layout_constraintTop_toBottomOf="@id/showContentTV"></Button>
+
+
+    <Button
+        android:id="@+id/serviceBtn2"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginVertical="30dp"
+        android:text="stop"
+        app:layout_constraintLeft_toRightOf="@id/serviceBtn1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/showContentTV"></Button>
+
+    <Button
+        android:id="@+id/serviceBtn3"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginVertical="30dp"
+        android:text="bind"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/serviceBtn4"
+        app:layout_constraintTop_toBottomOf="@id/serviceBtn1"></Button>
+
+    <Button
+        android:id="@+id/serviceBtn4"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginVertical="30dp"
+        android:text="get"
+        app:layout_constraintLeft_toRightOf="@id/serviceBtn3"
+        app:layout_constraintRight_toLeftOf="@id/serviceBtn5"
+        app:layout_constraintTop_toBottomOf="@id/serviceBtn2"></Button>
+
+    <Button
+        android:id="@+id/serviceBtn5"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginVertical="30dp"
+        android:text="unbind"
+        app:layout_constraintLeft_toRightOf="@id/serviceBtn4"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/serviceBtn2"></Button>
+
+    <Button
+        android:id="@+id/serviceBtn6"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginVertical="30dp"
+        android:text="play"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/serviceBtn4"></Button>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
